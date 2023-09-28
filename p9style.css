@@ -1,0 +1,378 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body,html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    line-height:1.4;
+    scroll-behavior: smooth;
+    color:white;
+}
+body{
+    font-size: 1.4rem;
+}
+.container{
+   
+    max-width: 1300px;
+    margin:0 auto;
+}
+header{
+   
+    background-color: rgb(31, 31, 90); 
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+   
+}
+ul{
+    list-style: none;
+}
+nav ul{
+    display:flex;
+    gap:2rem;
+    font-size: 1.9rem;
+}
+a{
+    
+    text-decoration: none;
+    color:white;
+} 
+.logo{
+    font-size: 2rem;
+    font-weight: 400;
+}
+nav li{
+    margin-right: 50px;
+    font-size: 1.8rem;
+    border-bottom: 1px transparent solid ;
+    transition:0.2s ease-in;
+}
+nav li:hover{
+    border-bottom: 1px solid yellowgreen;
+    transition:0.2s ease-in;
+}
+#hero{
+    background-color:rgb(61, 61, 124);
+    padding:4rem 0px;
+    border-bottom:blue;
+}
+.hero_img{
+    
+    border-radius: 275px;
+    height: 400px;
+    width: 436px;
+}
+#hero .container{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+#hero_content{
+    display:grid;
+    place-items: center;
+}
+#hero h1{
+    font: 3rem;
+    font-weight: bold;
+}
+.hi_text{
+
+font-size: 6rem;
+font-weight: bold;
+color:yellowgreen;
+}
+.name_text{
+    font-size: 5rem;
+}
+#hero h2 {
+    font-size: 4rem;
+    font-weight: bold;
+    overflow: hidden;
+    border-right: 0.15rem solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: typing 5s steps(40, end), blink-caret 0.75s step-end infinite;
+    width: max-content; /* Add this line */
+}
+@keyframes typing {
+    from{
+        width:0;
+    }
+    to{
+        width:100%;
+    }
+}
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: orange;
+    }
+}
+#project{
+
+    background-color: rgb(71, 71, 124);
+
+}
+#project h2{
+    font-size: 6rem;
+    text-align: center;
+    margin:2rem 0;
+}
+
+.project_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px ,1fr));
+   grid-gap:1rem;
+   margin-top: 60px;
+   
+    
+}
+.grid{
+    margin:0 auto;
+     display: grid; 
+    place-items: center;
+    top:10px;
+     
+}
+.card{
+    width:320px;
+    display:flex;
+    flex-direction: column;
+    border-radius: 0.5em;
+    overflow: hidden; 
+   transition:0.2s ease-in-out;
+
+}
+.card:hover{
+    transform:scale(1.05);
+    transition:0.2s ease-in-out;
+
+}
+.card:hover img{
+
+    transform:scale(1.05);
+    transition:0.2s ease-in-out;
+    opacity:0.8;
+
+}
+.card:hover .card_content{
+    background-color: white;
+    color:rgb(23, 23, 65);
+    transform:translateY(0px);
+}
+ .card_content{
+    padding:2rem;
+    position: relative;
+    top:-6.5rem;
+    margin-bottom: 6.5rem;
+    transition:0.5s ease-in-out;
+    transform:translateY(400px);
+
+ }
+ .card_content h3{
+    text-align: center;
+ }
+ #contact{
+    padding:3rem;
+    background-color: rgb(12, 12, 32);
+   
+  
+ }
+ /* #contact .container{
+    margin-top: 20px;
+    margin-bottom: 40px; 
+ } */
+ #contact h2{
+    margin:4px 0;
+    font-size: 5.7rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  
+   
+ }
+ /* .upper_contact{
+ 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+ }
+ .upper_contact ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(80px, 1fr));
+    font-size: 2rem;
+    margin-top: 20px;
+    align-items: center;
+    text-align: center;
+    gap:0.2rem;
+
+ }
+ .upper_contact i{
+    font-size: 2rem;
+ }
+
+ .upper_contact li{
+    font-size: 300;
+ }
+ .lower_contact{
+    
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+ }
+ .lower_contact ul{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(80px, 1fr));
+    font-size: 2rem;
+    padding:0 auto;
+    margin-top: 20px;
+    align-items: center;
+    text-align: center;
+    gap:0.2rem;
+
+ }
+*/
+ 
+
+ .upper_contact,
+.lower_contact {
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+     
+}
+
+.upper_contact ul,
+.lower_contact ul {
+padding:2rem;
+    display: flex; /* Change to flex */
+    gap: 20px; /* Add some gap between list items */
+    list-style: none;
+    font-size: 3rem;
+   
+}
+
+.upper_contact i,
+.lower_contact i {
+    font-size: 3rem;
+}
+
+.upper_contact li,
+.lower_contact li {
+    font-size: 2rem; /* Adjust font size */
+}
+footer{
+    background-color: rgb(5, 5, 46);
+    color: white;
+    padding: 2rem;
+    font-size: 1.6rem;
+    text-align: center;
+  
+ } 
+
+ footer p{
+  
+   justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.8rem;
+
+
+ }
+
+ 
+
+/* Media query for screens smaller than 768px (example breakpoint) */
+@media (max-width: 768px) {
+    body {
+        font-size: 1.2rem; /* Adjust the font size for smaller screens */
+    }
+
+    /* Center the logo and navigation items for smaller screens */
+    .logo {
+        text-align: center;
+        margin-bottom: 20px; /* Add some margin for spacing */
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 1rem; /* Add gap between navigation items */
+    }
+
+    nav li {
+        margin-right: 0; /* Remove right margin for navigation items */
+    }
+
+    /* Adjust the hero image size for smaller screens */
+    .hero_img {
+        height: 300px;
+        width: 300px;
+    }
+
+    /* Center hero content for smaller screens */
+    #hero .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Adjust project card width for smaller screens */
+    .card {
+        width: 80%; /* Adjust card width as needed */
+    }
+
+    /* Adjust font sizes for project cards on smaller screens */
+    .card_content h3 {
+        font-size: 2rem;
+    }
+
+    /* Center the "Let's Work together" heading and adjust font size for smaller screens */
+    #contact h2 {
+        font-size: 3rem;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    /* Adjust font sizes and spacing for contact icons and links on smaller screens */
+    .upper_contact ul,
+    .lower_contact ul {
+        font-size: 2rem;
+        gap: 1rem;
+    }
+
+    .upper_contact i,
+    .lower_contact i {
+        font-size: 2rem;
+    }
+
+    .upper_contact li,
+    .lower_contact li {
+        font-size: 1.6rem;
+    }
+
+    /* Add margin to the footer for spacing on smaller screens */
+    footer {
+        margin-top: 20px;
+    }
+}
